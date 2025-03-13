@@ -40,7 +40,9 @@ This tutorial outline's detail steps to set up a Domain Controller (DC) and a Cl
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Image](https://github.com/user-attachments/assets/55ccd9bb-4696-403d-9c91-1bb278244014)
+
 </p>
 <p>
 1.Create a Resource Group:
