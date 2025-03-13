@@ -35,7 +35,31 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+1.Create a Resource Group:
+
+Go to the Azure portal and create a new resource group for organizing your resources.
+
+2.Create a Virtual Network and Subnet:
+
+Create a virtual network (VNet) to ensure network connectivity.
+Define a subnet within the VNet for your Domain Controller VM.
+
+3.Create the Domain Controller VM (Windows Server 2022):
+
+Launch a Windows Server 2022 VM, naming it "DC-1."
+Set up a username (labuser) and password (Cyberlab123!) during VM creation.
+
+4.Set NIC Private IP to Static:
+
+After the VM is created, go to the Network Interface (NIC) settings of the VM and set the Private IP address to be static.
+
+5.Log into the VM and disable Windows Firewall (for testing connectivity):
+
+Log into the VM using Remote Desktop Protocol (RDP).
+Disable the Windows Firewall temporarily to test connectivity (do this with caution for testing purposes).
+
+
+
 </p>
 <br />
 
