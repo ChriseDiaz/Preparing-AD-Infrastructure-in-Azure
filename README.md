@@ -67,14 +67,31 @@ Disable the Windows Firewall temporarily to test connectivity (do this with caut
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+1.Create the Client VM (Windows 10) named “Client-1”:
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Launch a Windows 10 VM named "Client-1."
+Set up the username (labuser) and password (Cyberlab123!) during VM creation.
+
+2.Attach Client-1 to the same region and Virtual Network as DC-1:
+
+Ensure the VM is in the same Azure region and connected to the same Virtual Network (VNet) as the Domain Controller (DC-1).
+
+3.Set DNS settings to DC-1’s Private IP:
+
+After VM creation, go to Client-1’s network settings and set the DNS server to the private IP address of DC-1.
+
+4.Restart Client-1 from the Azure Portal:
+
+Use the Azure portal to restart the Client-1 VM.
+
+5.Log in to Client-1 and test connectivity:
+
+Log in to Client-1.
+Attempt to ping DC-1’s private IP address and ensure the ping succeeds.
+
+6.Check DNS settings on Client-1:
+
+Open PowerShell on Client-1 and run ipconfig /all.
+Verify that the DNS settings show DC-1’s private IP address.
 </p>
 <br />
