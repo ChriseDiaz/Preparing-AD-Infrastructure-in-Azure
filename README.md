@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+<h1>Preparing-Active Directory-Infrastructure (Azure)</h1>
+This tutorial outline's detail steps to set up a Domain Controller (DC) and a Client VM in Azure, creating a basic network environment where the Domain Controller acts as the DNS server for the Client machine.<br />
 
 
 <h2>Video Demonstration</h2>
@@ -24,10 +24,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+-Create a Resource Group and Network: Set up a Resource Group, Virtual Network (VNet), and Subnet for resource organization and connectivity.
+
+-Deploy Domain Controller VM (DC-1): Create a Windows Server 2022 VM (DC-1), assign credentials, and set its NIC’s private IP to static.
+
+-Disable Firewall on DC-1: Temporarily disable the Windows Firewall on DC-1 for testing network connectivity.
+
+-Deploy Client VM (Client-1): Create a Windows 10 VM (Client-1), ensuring it's in the same region and VNet as DC-1, and configure DNS to point to DC-1’s private IP.
+
+-Test Connectivity and DNS on Client-1: Restart Client-1, ping DC-1’s IP, and verify DNS settings with ipconfig /all to ensure proper communication and name resolution.
+
+
+
 
 <h2>Deployment and Configuration Steps</h2>
 
