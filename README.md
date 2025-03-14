@@ -8,7 +8,7 @@ This tutorial outline's detail steps to set up a Domain Controller (DC) and a Cl
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
+- ### [YouTube/ClipChamp: Preparing-Active Directory-Infrastructure](https://youtu.be/saSDSWheGPo?si=WCx6LxMvNPvrpEI2)
 
 <h2>Environments and Technologies Used</h2>
 
