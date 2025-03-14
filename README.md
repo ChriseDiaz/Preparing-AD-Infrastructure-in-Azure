@@ -74,7 +74,9 @@ Disable the Windows Firewall temporarily to test connectivity (do this with caut
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Image](https://github.com/user-attachments/assets/e41ca3b5-18aa-40a5-a8ab-9c13dc039fdb)
+
 </p>
 <p>
 1.Create the Client VM (Windows 10) named “Client-1”:
